@@ -39,7 +39,15 @@ body{
 .sidebarHeader{
     width: 100%;
     margin-bottom: 8px;
+    display: flex;
+    transform: all 0.4s;
 }
+
+.sidebarHeader .namePhoto{
+    display: flex;
+    align-items: center;
+}
+
 .photoPerfil img{
     width: 40px;
     max-height: 40px;
@@ -88,7 +96,7 @@ body{
     width: 100%;
     height: 40px;
     border-left: 1px solid #ecf0f1;
-    background: #34495e;
+    background: #ecf0ff;
     transition: 0.5s;
 }
 
@@ -101,14 +109,12 @@ body{
 
 .main{    
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-direction: column;
     margin-left: 185px;
     margin-right: 20px;
     color: #2c3e50;
     transition: margin 0.4s;
 }
-
 
 .main > div > i{
     font-size: 70px;
@@ -123,6 +129,36 @@ body{
     margin: 50px 0 0 50px;
 }
 
+.main .nav-menu i {
+    font-size: 30px;
+    color: black;
+}
+
+.main > div > span {
+    padding: 4px;
+}
+.nav-menu{
+    padding: 20px;
+    color: #2980b9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.titlePage{
+    background: #f4f4f6;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 700px;
+    height: 60px;    
+}
+
+
+
+
 @media (width < 920px){
     .sidebar{
         width: 60px;
@@ -133,6 +169,17 @@ body{
     }
 
     .sidebar button > span > span{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidebarHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebarHeader .namePhoto{
         opacity: 0;
         visibility: hidden;
     }
