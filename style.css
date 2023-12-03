@@ -58,18 +58,13 @@ body{
 }
 
 .photoPerfil img:hover{
-    transform: scale(1.20);
+    transform: scale(1.1);
 }
-
 
 .sidebarHeader > span{
     padding: 2px;
 }
 
-.sidebarHeader > i{
-    font-size: 15px;
-    cursor: pointer;
-}
 
 .sidebar button{
     width: 100%;
@@ -78,7 +73,6 @@ body{
     border: 0;
     font-family: inherit;
     color: inherit;
-    cursor: pointer;
     text-align: left;
     padding: 0;
 }
@@ -107,57 +101,57 @@ body{
     width: 100%;
 }
 
-.main{    
+/*=============Sidebard=============*/
+
+
+
+/*=============Dash Board=============*/
+
+
+/*=============Dashboard=============*/
+
+/*=============Dashboard - Alunos=============*/
+
+.main-alunos{    
     display: flex;
     flex-direction: column;
     margin-left: 185px;
     margin-right: 20px;
     color: #2c3e50;
-    transition: margin 0.4s;
+    transition:  0.4s;
 }
 
-.main > div > i{
-    font-size: 70px;
-}
-
-.alert{
-    background: #f4f4f6;
+.main-alunos .nav-menu i {
+    font-size: 30px !important;
     color: inherit;
-    border: 1px solid #ced6e0;
-    border-radius: 10px;
-    width: 200px;
-    margin: 50px 0 0 50px;
 }
 
-.main .nav-menu i {
-    font-size: 30px;
-    color: black;
-}
-
-.main > div > span {
+.main-alunos > div > span {
     padding: 4px;
 }
+
 .nav-menu{
-    padding: 20px;
+    font-size: 13px;
+    margin-top: 20px;
     color: #2980b9;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.titlePage{
-    background: #f4f4f6;
-    margin-top: 20px;
+
+.container{
+    background: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
-    font-weight: 600;
-    width: 700px;
-    height: 60px;    
 }
 
-
-
+.info, .content{
+    padding: 15px;
+}
 
 @media (width < 920px){
     .sidebar{
@@ -184,8 +178,8 @@ body{
         visibility: hidden;
     }
 
-    .main{
+    .main, .main-alunos{
         margin-left: 70px;
-    }    
-}
+    }
 
+}
