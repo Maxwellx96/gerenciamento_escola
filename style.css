@@ -29,12 +29,12 @@ i{
 }
 
 .sidebar{
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 240px;
-    height: 100vh;
+    height: 100%;
     padding: 10px;
     background: #f1f2f6;
     color: #2f3542;
@@ -81,18 +81,13 @@ i{
     overflow: hidden;
 }
 
-.logout{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
 .main--content{
     position:relative;
     background: #ebecf0;
     width: 100%;
+    margin-left: 240px;
     padding: 1rem;
+    transition: all 0.4s ease-in-out;
 }
 
 .header--wrapper img{
@@ -124,9 +119,9 @@ i{
 }
 
 .search--box{
-    background: #2f3542;
+    background: #dfe6e9;
     border-radius: 10px;
-    color: #f1f2f6;
+    color: #2d3436;
     display: flex;
     align-items: center;
     gap: 2px;
@@ -136,7 +131,7 @@ i{
 
 .search--box input{
     background: transparent;
-    color: #f1f2f6;
+    color: #2d3436;
     padding: 5px;
     transition: all 0.8s linear;
 }
@@ -152,6 +147,27 @@ i{
     transition: all 0.5s;
 }
 
+.content--container{
+    background: #2d3436;
+    color: #fff;
+    border-radius: 10px 10px 0 0 ;
+    padding: 10px;
+    width: 100%;
+}
+
+.content--title{
+    
+}
+
+.content--wrapper{
+    background: #fff;
+    color:#2d3436;
+    border-radius: 0 0 10px 10px;
+    padding: 16px;
+    font-size: 14px;
+
+}
+
 @media (width < 1000px){
     .sidebar{
         width: 65px;
@@ -163,7 +179,8 @@ i{
         padding: 0px;
     }
 
-    .logout{
-        position: relative;
+    .main--content{
+        margin-left: 65px;
     }
+
 }
