@@ -156,7 +156,23 @@ i{
 }
 
 .content--title{
-    
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.button--remove{
+    background:#d63031;
+    color: inherit;
+    align-items: center;
+    padding: 7px;
+}
+
+.button--add{
+    background: #00b894;
+    color: inherit;
+    align-items: center;
+    padding: 7px;
 }
 
 .content--wrapper{
