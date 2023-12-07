@@ -84,7 +84,7 @@ i{
     position:relative;
     background: #ebecf0;
     width: 100%;
-    margin-left: 200px;
+    margin-left: 220px;
     padding: 1rem;
     transition: all 0.4s ease-in-out;
 }
@@ -207,7 +207,6 @@ i{
     width: 100%;
     border-radius: 5px;
 }
-
 
 .mobile--menu{
     display: none;    
