@@ -251,6 +251,21 @@ i{
         margin-top: 40px;
     }
 
+    .content--title{
+        font-size: 12px;
+    }
+
+    .content--wrapper{
+        font-size: 11px;
+    }
+    .content--wrapper i{
+        font-size: 14px!important;
+    }
+
+    .header--wrapper img{
+        display: none;
+    }
+
     .mobile--menu{
         display: block;
         width: 100%;
