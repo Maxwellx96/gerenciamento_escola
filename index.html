@@ -11,73 +11,252 @@
 </head>
 <body>
 
-    <aside class="sidebar">
-        <header class="sidebarHeader">
-            <span class="photoPerfil">
-                <img src="https://img.freepik.com/premium-vector/company-logo-industrial-technology-system-line-circle_579677-506.jpg" />
-            </span>
-            <span>Maxwell</span>
-            <i class="material-symbols-outlined">expand_more</i>
-            <span></span>
-        </header>
-
-        <nav>
-            <button>
-                <span>
-                    <i class="material-symbols-outlined">home</i>
-                    <span>INÍCIO</span>
-                </span>
-            </button>
-            <button>
-                <span>
+    <div class="sidebar">
+        
+        <div class="logo">
+            <img src="https://img.freepik.com/vetores-gratis/vetor-de-gradiente-de-logotipo-colorido-de-passaro_343694-1365.jpg"/>
+        </div>
+        <ul class="menu">
+            <li class="active">
+                <a href="#" >
+                    <i class="material-symbols-outlined">menu</i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
                     <i class="material-symbols-outlined">person</i>
-                    <span>ALUNOS</span>
-                </span>
-            </button>
-            <button>
-                <span>
+                    <span>Alunos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
                     <i class="material-symbols-outlined">person</i>
-                    <span>TUTORES</span>
-                </span>
-            </button>
-            <button>
-                <span>
+                    <span>Tutores</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
                     <i class="material-symbols-outlined">book</i>
-                    <span>MATÉRIAS</span>
-                </span>
-            </button>
-            <button>
-                <span>
+                    <span>Matérias</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="material-symbols-outlined">payments</i>
+                    <span>Financeiro</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
                     <i class="material-symbols-outlined">settings</i>
-                    <span>CONFIGURAÇÕES</span>
-                </span>
-            </button>
-        </nav>
-    </aside>
-
-    <main class="main">
-        <div class="alert" role="alert">
-            <h5>ALUNOS</h5>
+                    <span>Configurações</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="material-symbols-outlined">logout</i>
+                    <span>Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>   
+    
+    <div class="mobile--menu">
+        <div class="mobile--menu-content">
+            <i class="material-symbols-outlined">menu</i>
             <i class="material-symbols-outlined">person</i>
-          </div>
-        <div class="alert" role="alert">
-            <h5>TUTORES</h5>
             <i class="material-symbols-outlined">person</i>
-          </div>
-        <div class="alert" role="alert">
-            <h5>MATÉRIAS</h5>
             <i class="material-symbols-outlined">book</i>
-          </div>
-        <div class="alert" role="alert">
-            <h5>FINANCEIRO</h5>
             <i class="material-symbols-outlined">payments</i>
-          </div>
-        <div class="alert" role="alert">
-            <h5>RELATÓRIO</h5>
-            <i class="material-symbols-outlined">description</i>
-          </div>
-    </main>
+            <i class="material-symbols-outlined">settings</i>
+            <i class="material-symbols-outlined">logout</i>
+        </div>
+    </div>
 
+    <div class="main--content">        
+        <div class="header--wrapper">
+            <div class="header--title">
+                
+                <span>Alunos</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="material-symbols-outlined">search</i>
+                    <input type="text" placeholder="Procurar aluno...">
+                </div>                
+                          
+                <img src="https://img.freepik.com/vetores-gratis/vetor-de-gradiente-de-logotipo-colorido-de-passaro_343694-1365.jpg"/>
+            </div>
+        </div>
+
+        <div class="content--container">
+            <div class="content--title">
+                
+                <span>Alunos <strong>Matriculados</strong></span>
+                <span>
+                    <button class="button--add">
+                        <i class="material-symbols-outlined">person_add</i>
+                        Add
+                    </button>
+                    <button class="button--remove">
+                        <i class="material-symbols-outlined">person_remove</i>
+                        Remove
+                    </button>
+                </span>                
+            </div>
+        </div>
+
+        <div class="content--wrapper">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col"><input type="checkbox" class="form-check-input"/></th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Matrícula</th>
+                    <th scope="col">Tutor</th>
+                    <th scope="col">Turma</th>
+                    <th scope="col">Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Maxwell</td>
+                    <td>00001</td>
+                    <td>Mark</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Lima</td>
+                    <td>00002</td>
+                    <td>Jacob</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox" class="form-check-input"/></th>
+                    <td>Larry</td>
+                    <td>00003</td>
+                    <td>Bird</td>
+                    <td>KDJ-12</td>
+                    <td>
+                        <i class="material-symbols-outlined">edit</i>
+                        <i class="material-symbols-outlined">person_remove</i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
