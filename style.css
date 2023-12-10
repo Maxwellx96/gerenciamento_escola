@@ -208,6 +208,34 @@ i{
     border-radius: 5px;
 }
 
+.card--alunos{
+    background: #f1f2f6;
+    border-radius: 8px;
+    border: #dfe6e9 1px solid;
+    display: inline-flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 4px;
+    transition: all 0.4s linear;
+}
+.card--alunos-info{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 15px;
+}
+
+.card--alunos-info i{
+    font-size: 50px!important;
+}
+
+.card--alunos-info .counter{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
 .mobile--menu{
     display: none;    
     transition: all 0.8s ease-in-out;
@@ -237,6 +265,10 @@ i{
 
     .main--content{
         margin-left: 65px;
+    }
+
+    .card--alunos{
+        width: 240px;
     }
 
 }
@@ -280,6 +312,15 @@ i{
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .card--alunos{
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .card--alunos i{
+        font-size: 50px!important;
     }
 
 }

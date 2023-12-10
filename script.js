@@ -1,5 +1,5 @@
-const links = ['', 'index.html', 'alunos.html']
-const sidebar = [ '.sidebar-dashboard', '.sidebar-dashboard', '.sidebar-alunos']
+const links = ['', 'index.html', 'alunos.html', 'materias.html']
+const sidebar = [ '.sidebar-dashboard', '.sidebar-dashboard', '.sidebar-alunos', '.sidebar-materias']
 const currentURL = window.location.href
 
 for(i = 0; i < links.length; i++){
